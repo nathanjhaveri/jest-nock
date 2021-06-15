@@ -18,3 +18,4 @@ type Options = {
 };
 
 export function upgradeJasmine(global: NodeJS.Global, options?: Options): void;
+export function upgradeCircus(global: NodeJS.Global, options?: Options): void;
