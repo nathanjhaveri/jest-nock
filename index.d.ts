@@ -17,5 +17,5 @@ type Options = {
     nockOptions?: nock.Options;
 };
 
-export function upgradeJasmine(global: NodeJS.Global, options?: Options): void;
-export function upgradeCircus(global: NodeJS.Global, options?: Options): void;
+export function upgradeJasmine(global: typeof globalThis, options?: Options): void;
+export function upgradeCircus(global: typeof globalThis, options?: Options): void;
